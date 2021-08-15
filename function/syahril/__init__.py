@@ -12,7 +12,7 @@ def main(msg: func.ServiceBusMessage):
     logging.info('Python ServiceBus queue trigger processed message: %s',notification_id)
 
     connection = psycopg2.connect(  host="syahril.postgres.database.azure.com",
-                                    dbname="syahril",
+                                    dbname="techconfdb",
                                     user="syahril@syahril",
                                     password="Raihanah19" )
     cursor = connection.cursor()
