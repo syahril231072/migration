@@ -63,9 +63,11 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
-| *Azure Service Bus*   |         |              |
-| ...                   |         |              |
+| *Azure Postgres Database* | Basic    | $32.82             |
+| *Azure Service Bus*   | Basic        | $0.01             |
+| *Azure App Service*   | F1        | Free             |
+| *Azure Storage*   | Basic        | $0.10             |
 
+Azure Postgres Database includes 1vCore, 5GB Storage and 7 days backup retention period. 
 ## Architecture Explanation
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+Azure App Service as "Build, deploy, and scale web apps on a fully managed platform". Azure Functions is detailed as "Listen and react to events across your stack".  Combination of both could have a convenient way to quickly deploy a simple API. In term of performance background process could be more efficient and effective. Cost optimazation could be achieve by combining both. Scability could be managed by App service. Azure function also have benefit on great debugging support, Can be used as lightweight https service and Event driven.  
